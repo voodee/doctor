@@ -1,0 +1,183 @@
+.buttons
+  border-top #e2e6e7
+  border-bottom #f0f2f1
+  background #f3f5f4
+  background linear-gradient(to bottom,  #f3f5f4 0%, #ffffff 100%)
+  
+  &-item
+    text-align center
+    
+    a
+      &:link
+      &:visited  
+        display inline-block 
+        width 134px
+        // height 134px
+        height 148px
+        background url('../img/icon.png') 0 -260px no-repeat
+        
+      &:hover
+      &:focus
+        opacity .6  
+        background-position-y -134px
+
+      
+    &.active
+      a 
+        opacity .6
+        background-position-y -134px
+
+    &:nth-child(2) a
+      background-position-x -134px  
+      
+    &:nth-child(3) a
+      background-position-x -268px  
+      
+    &:nth-child(4) a
+      background-position-x -402px  
+      
+    &:nth-child(5) a
+      background-position-x -536px  
+      
+    &:nth-child(6) a
+      background-position-x -670px  
+      
+    span 
+      font-size 1rem
+      color #666
+      margin-top 114px
+      display inline-block
+
+
+
+
+
+
+
+
+.slides 
+  position relative
+  overflow hidden
+  
+  &-text
+    padding-top 5rem
+    padding-bottom 25vh
+
+  &-icon
+    display inline-block
+    width 134px
+    height 134px
+    background url('../img/icon.png') 0 0 no-repeat
+    margin 9vh 0 0
+    
+    &-2
+      background-position-x -134px  
+      
+    &-3
+      background-position-x -268px  
+      
+    &-4
+      background-position-x -402px  
+      
+    &-5
+      background-position-x -536px  
+      
+    &-6
+      background-position-x -670px 
+    
+    &-box 
+      text-align left
+  
+  &-nav 
+    position absolute
+    z-index 3
+    left 2vw
+    top 50%
+    width 26px
+    transform translateY(-50%)
+    
+    a 
+      display block
+      position relative
+      z-index 4
+      color transparent
+      width 26px
+      height 26px
+      outline none
+      margin 25px 0
+      border-radius 50%
+      border .2rem solid #dfe3e4
+      
+      &:after
+        content ''
+        position absolute
+        top 20%
+        left 20%
+        width 60%
+        height 60%
+        border-radius 100%
+        background #fff
+              
+      &.active:after
+        background #26a699
+        
+      &:hover:after
+      &:focus:after
+        background rgba(38, 166, 153, .6)  
+        
+  &-box 
+    position relative
+  
+  &-item
+    position absolute
+    top 0
+    width 100%
+    visibility hidden
+    
+    &.active
+      visibility visible
+    
+    &-images
+      position absolute
+      top 0
+      width 100%
+      height 100%
+      background url('../img/pic5.jpg') 50vw 100% no-repeat
+      
+    &:nth-child(1)
+      .slides-item-images
+        background-image url('../img/slide1.jpg')
+    
+    &:nth-child(2)
+      .slides-item-images
+        background-image url('../img/slide2.jpg')
+    
+    &:nth-child(3)
+      .slides-item-images
+        background-image url('../img/slide3.jpg')
+    
+    &:nth-child(4)
+      .slides-item-images
+        background-image url('../img/slide4.jpg')
+    
+    &:nth-child(5)
+      .slides-item-images
+        background-image url('../img/slide5.jpg')
+    
+    &:nth-child(6)
+      .slides-item-images
+        background-image url('../img/slide6.jpg')
+        
+
+
+
+@media (max-width: 992px) 
+
+  .slides
+    
+    &-icon
+      &-box
+        display none  
+        
+    &-text 
+      background-color rgba(255, 255, 255, .9)    

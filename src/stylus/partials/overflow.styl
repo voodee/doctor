@@ -1,0 +1,78 @@
+::-moz-selection 
+  background-color rgba(0, 0, 0, .6)
+  color #fff
+
+::selection 
+  background-color rgba(0, 0, 0, .6)
+  color #fff
+
+
+body 
+  font-weight 300
+  font-family 'Roboto', sans-serif
+  // background url('../img/background.jpg') 50% 0 no-repeatc
+
+.text 
+  &-bold 
+    font-weight 400
+    
+  &-center
+    text-align center 
+    
+
+.btn 
+  &-lg2
+    padding 2rem 4.8rem
+    font-size 2rem
+    line-height 1.3333333
+    border-radius .8rem
+    
+  &-default2
+    color #25a499
+    background #fff
+    // background -moz-linear-gradient(top, #ffffff 0%, #e8f4f4 100%)
+    // background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e8f4f4))
+    // background -webkit-linear-gradient(top, #ffffff 0%,#e8f4f4 100%)
+    // background -o-linear-gradient(top, #ffffff 0%,#e8f4f4 100%)
+    // background -ms-linear-gradient(top, #ffffff 0%,#e8f4f4 100%)
+    background linear-gradient(to bottom, #ffffff 0%, #e8f4f4 100%)
+    border-color #c4c5c0 
+    
+    &:hover
+    &:focus
+      color rgba(37, 164, 153, .9)   
+      background #e8f4f4
+      // background -moz-linear-gradient(top, #e8f4f4 0%, #ffffff 100%)
+      // background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e8f4f4), color-stop(100%,#ffffff))
+      // background -webkit-linear-gradient(top, #e8f4f4 0%,#ffffff 100%)
+      // background -o-linear-gradient(top, #e8f4f4 0%,#ffffff 100%)
+      // background -ms-linear-gradient(top, #e8f4f4 0%,#ffffff 100%)
+      background linear-gradient(to bottom, #e8f4f4 0%, #ffffff 100%)
+
+
+  &-primary2
+    color #fff
+    background-color #25a398
+    border-color #25a398
+    
+    &:hover
+    &:focus  
+      color #fff
+      background-color rgba(37, 163, 152, .6)
+      border-color #25a398
+      
+
+.form
+  &-control
+    height 42px
+    border-radius 4px
+    
+
+@media (max-width: 768px)
+  .invisible
+    visibility visible !important      
+    
+
+@media (max-width: 320px)
+  html
+    font-size 8px    

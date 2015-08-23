@@ -1,0 +1,39 @@
+.how
+  .main-title2
+    color #333
+    text-align center
+    top -12vh
+    position relative
+
+  &-left
+  &-right
+    height 84vh
+    background-size contain
+    position relative
+    z-index 1
+    background-repeat no-repeat
+    background-position 50% 100%
+    
+  &-left
+    background-image url('../img/pic1.jpg')
+    background-position-x 0
+
+  &-phone
+    position relative
+    z-index 2
+    height 84vh
+    // overflow hidden
+    
+    &-img
+      position absolute
+      // top 0
+      top -43vh
+      background url('../img/phone.png') 50% 0 no-repeat
+      background-size contain
+      height 84vh
+      width 140%
+      left -20%
+      
+  &-right
+    background-image url('../img/pic2.jpg') 
+    background-position-x 100%

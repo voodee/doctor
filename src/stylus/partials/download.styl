@@ -1,0 +1,84 @@
+.download
+  background #fafafa
+  
+  &-img
+    text-align center
+    padding 5rem 0 3rem
+    
+  &-text 
+    padding-top 5rem
+    padding-bottom 5rem
+
+
+  &-store
+    padding-top 1rem
+
+    &-text 
+    a 
+      vertical-align middle 
+      margin 0 1rem
+    
+    &-text 
+      margin-left 0
+
+    a
+      position relative
+      border 0
+      text-decoration none
+      line-height 4rem
+      display inline-block
+      padding 0 2rem 0 4rem
+      border-radius .5rem
+      transition all 0.3s ease
+      overflow hidden
+      font-weight 400
+      font-size 1.4rem
+      color rgba(255,255,255,.9)
+      
+      &.download-store-appstore
+        background #191919
+        
+      &.download-store-playstore
+        background #22AFC2
+        
+      // &:first-child
+      //   margin-left 0  
+
+      i
+        font-size 2rem
+        position absolute
+        line-height 4rem
+        margin-left -2.5rem
+      &:hover
+        color rgba(255,255,255,1)
+      &:after
+        content ''
+        position absolute
+        top 0
+        width 200px
+        left -200px
+        transform skewX(-25deg)
+        background-image linear-gradient(to right,transparent,rgba(white, .14),transparent)
+        height 50px
+      &:hover:after
+        animation shine .8s ease
+        
+
+
+@keyframes shine
+  to
+    left 200px
+    
+
+
+@media (max-width: 768px)
+  .download 
+    background none 
+    
+    &-store
+      &-text
+        display block
+        margin-bottom 1rem
+        
+      a:first-of-type
+        margin-left 0      

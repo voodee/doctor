@@ -1,0 +1,56 @@
+.footer
+  background #25a499
+    
+  &-logo
+    height 78px
+    background #25a499 url('../img/logo.png') 67% 50% no-repeat
+    text-indent -9999px
+    
+    a 
+      display block
+      
+  &-text
+    padding-top 2rem
+    line-height 2rem
+    color rgba(255, 255, 255, .6)    
+    
+  &-social
+    text-align right
+    line-height 7.7rem
+    
+    &-ul 
+      list-style none
+      margin 0
+      padding 0
+    
+    &-li 
+      display inline-block  
+      margin 0 .5rem
+      
+      a 
+        display inline-block  
+        width 4rem
+        height 4rem 
+        background rgba(255, 255, 255, .6)
+        border-radius 100%
+        text-align center
+        color #25a499
+        line-height 4rem
+        font-size 2rem
+        
+        &:hover
+        &:focus
+          background rgba(255, 255, 255, 1)
+          
+        i 
+          outline none  
+          
+
+          
+@media (max-width: 768px)
+
+  .footer-logo
+    background-position-x 50%    
+    
+  .footer-social
+    text-align center           
