@@ -1,5 +1,5 @@
 .navigation
-  position fixed
+  position absolute
   top 0
   z-index 9999
   width 100%
@@ -77,3 +77,15 @@
 @media (max-width: 320px)
   .navigation-download
     display none
+    
+
+@media (max-width: 1200px)
+  .navigation
+    &-menu-ul li
+      margin 0 1rem
+      
+@media (min-width: 1200px)
+  .navigation
+    &-download-link
+      &:last-child
+        padding-right 9vw

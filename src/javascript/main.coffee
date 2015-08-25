@@ -44,5 +44,10 @@ $(document).ready ->
   # Sliders
   require './partials/sliders'
 
+  # PopUp
+  require './lib/jquery.reveal.js'
+
+  # SweetAlert
+  require './lib/sweetalert.js'
 
   console.log 'Hi! I\'m doctor.'

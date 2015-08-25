@@ -27,15 +27,15 @@
             %h1 
               %a{ :href => '#', :title => '' } Мобильная медсестра
 
-          .col-md-5.hidden-sm.hidden-xs.navigation-menu
+          .col-md-4.hidden-sm.hidden-xs.navigation-menu
             %ul.navigation-menu-ul
               %li
-                %a{ :href => '#', :title => '' } Презентация PDF
+                %a{ :href => '#', :title => '', 'data-reveal-id': 'form-pdf' } Презентация PDF
               %li
-                %a{ :href => '#', :title => '' } Mediakit
+                %a{ :href => '#', :title => '', 'data-reveal-id': 'form-mediakit' } Mediakit
 
 
-          .col-md-4.col-sm-6.navigation-download
+          .col-md-5.col-sm-6.navigation-download
             %span.navigation-download-text Скачать приложение
             %a.navigation-download-link.navigation-download-android{ :href => '#', :title => '' } 
             %a.navigation-download-link.navigation-download-apple{ :href => '#', :title => '' } 
@@ -85,12 +85,12 @@
               #download-links.animate-right2
                 .download-store.invisible
                   %span.download-store-text Доступно в 
-                  %a.download-store-appstore{ :href => '#', :title => '', :alt => '' } 
-                    %i.fa.fa-apple
-                    App Store
-                  %a.download-store-playstore{ :href => '#', :title => '', :alt => '' } 
-                    %i.fa.fa-play
-                    Google Play
+                  %a{ :href => '#', :title => '', :alt => '' } 
+                    %img{ :alt => "Get it on Google Play", :src => "https://developer.android.com/images/brand/ru_generic_rgb_wo_45.png" }
+                  %a{ :href => '#', :title => '', :alt => '' } 
+                    %img{ :alt => "Download on the App Store", :src => "img/Download_on_the_App_Store_Badge_RU.svg" }
+
+
 
 
       .section.wow.animate-box
@@ -226,13 +226,10 @@
             .col-md-12.animate-left0.invisible
               .download-store
                 %span.download-store-text Доступно в 
-                %a.download-store-appstore{ :href => '#', :title => '', :alt => '' } 
-                  %i.fa.fa-apple
-                  App Store
-                %a.download-store-playstore{ :href => '#', :title => '', :alt => '' } 
-                  %i.fa.fa-play
-                  Google Play
-
+                %a{ :href => '#', :title => '', :alt => '' } 
+                  %img{ :alt => "Get it on Google Play", :src => "https://developer.android.com/images/brand/ru_generic_rgb_wo_45.png" }
+                %a{ :href => '#', :title => '', :alt => '' } 
+                  %img{ :alt => "Download on the App Store", :src => "img/Download_on_the_App_Store_Badge_RU.svg" }
 
       .section.sale
         .container
@@ -277,4 +274,64 @@
                   %a.footer-social-icon{ :href => '#', :title => ''}
                     %i.fa.fa-twitter
 
+
+    #form-mediakit.reveal-modal
+      %h2 Получить Mediakit
+      %form#ss-form{:action => "https://docs.google.com/forms/d/1RAUNrG71N2oznEsTKW9GFj_ZsITxDF5V4eT4Aap5DQY/formResponse", :method => "POST", :onsubmit => "submitted=true;", :target => "hidden_iframe"}
+        .form-group
+          %label{ :for => "entry_1839168028" } Ваше Имя
+          %input#entry_1839168028.form-control{"aria-label" => "Ваше Имя  ", :dir => "auto", :name => "entry.1839168028", :title => "", :type => "text", :value => ""}
+        
+        .form-group
+          %label{ :for => "entry_1413954203" } Компания
+          %input#entry_1413954203.form-control{"aria-label" => "Компания  ", :dir => "auto", :name => "entry.1413954203", :title => "", :type => "text", :value => ""}
+        
+        .form-group
+          %label{ :for => "entry_553365034" } E-Mail
+          %input#entry_553365034.form-control{"aria-label" => " E-Mail  ", "aria-required" => "true", :dir => "auto", :name => "entry.553365034", :required => "", :title => "", :type => "text", :value => ""}
+
+        .form-group
+          %label{ :for => "entry_82576170" } Сообщение
+          %textarea#entry_82576170.form-control{"aria-label" => "Сообщение  ", :cols => "0", :dir => "auto", :name => "entry.82576170", :rows => "4"}
+
+        %input{:name => "draftResponse", :type => "hidden", :value => "[,,\"-6942591810798842569\"]\r\n"}
+        %input{:name => "pageHistory", :type => "hidden", :value => "0"}
+        %input{:name => "fvv", :type => "hidden", :value => "0"}
+        %input{:name => "fbzx", :type => "hidden", :value => "-6942591810798842569"}
+        %input#ss-submit.btn.btn-lg.btn-primary{:name => "submit", :type => "submit", :value => "Готово"}
+
+      %a.close-reveal-modal &#215;   
+
+
+
+    #form-pdf.reveal-modal
+      %h2 Получить презентацию проекта
+      %form#ss-form{:action => "https://docs.google.com/forms/d/1Mhq5-jDqwmG9kZ0AUkf_yEnA_on5KYDgxmzObEOZsCc/formResponse", :method => "POST", :onsubmit => "submitted=true;", :target => "hidden_iframe"}
+        .form-group
+          %label{ :for => "entry_42945489" } Ваше Имя
+          %input#entry_42945489.form-control{"aria-label" => "Ваше Имя  ", :dir => "auto", :name => "entry.42945489", :title => "", :type => "text", :value => ""}
+        
+        .form-group
+          %label{ :for => "entry_1604023970" } Компания
+          %input#entry_1604023970.form-control{"aria-label" => "Компания  ", :dir => "auto", :name => "entry.1604023970", :title => "", :type => "text", :value => ""}
+        
+        .form-group
+          %label{ :for => "entry_5713699" } E-Mail
+          %input#entry_5713699.form-control{"aria-label" => " E-Mail  ", "aria-required" => "true", :dir => "auto", :name => "entry.5713699", :required => "", :title => "", :type => "text", :value => ""}
+
+        .form-group
+          %label{ :for => "entry_914677203" } Сообщение
+          %textarea#entry_914677203.form-control{"aria-label" => "Сообщение  ", :cols => "0", :dir => "auto", :name => "entry.914677203", :rows => "4"}
+
+        %input{:name => "draftResponse", :type => "hidden", :value => "[,,\"-481916804165446593\"]\r\n"}
+        %input{:name => "pageHistory", :type => "hidden", :value => "0"}
+        %input{:name => "fvv", :type => "hidden", :value => "0"}
+        %input{:name => "fbzx", :type => "hidden", :value => "-481916804165446593"}
+        %input#ss-submit.btn.btn-lg.btn-primary{:name => "submit", :type => "submit", :value => "Готово"}
+
+      %a.close-reveal-modal &#215;
+
+    :javascript
+      var submitted = false;
+    %iframe#hidden_iframe{:name => "hidden_iframe", :onload => "if(submitted) {$('.reveal-modal').trigger('reveal:close'); swal('Хорошая работа!', 'Ваша заявка принята!', 'success')}", :style => "display:none;"}
     %script{:src => "js/main.js"}    
