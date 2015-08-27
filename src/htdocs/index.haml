@@ -73,22 +73,22 @@
             .col-md-5.how-right.hidden-sm.animate-right0.invisible
 
 
-      .section.download.animate-box
-        .container
-          .row
-            .col-md-6.hidden-sm.hidden-xs.download-img.animate-left0.invisible
-              %img{ :src => 'img/pic3.jpg', :title => '', :alt => '' }
-            .col-md-6.download-text.animate-right0.invisible
-              %h2.main-title2 Вы получаете назначение от врача и заносите данные в приложение
-              %p.main-desc2.animate-right1.invisible Вам нужно всего лишь воспользоваться удобным интерфейсом заполнеения данных и другой маркетинговый текст приблизительно такой длины. Можно ещё чуть больше, на пару строчек. Ещё больше текста.
+      / .section.download.animate-box
+      /   .container
+      /     .row
+      /       .col-md-6.hidden-sm.hidden-xs.download-img.animate-left0.invisible
+      /         %img{ :src => 'img/pic3.jpg', :title => '', :alt => '' }
+      /       .col-md-6.download-text.animate-right0.invisible
+      /         %h2.main-title2 Вы получаете назначение от врача и заносите данные в приложение
+      /         %p.main-desc2.animate-right1.invisible Вам нужно всего лишь воспользоваться удобным интерфейсом заполнеения данных и другой маркетинговый текст приблизительно такой длины. Можно ещё чуть больше, на пару строчек. Ещё больше текста.
 
-              #download-links.animate-right2
-                .download-store.invisible
-                  %span.download-store-text Доступно в 
-                  %a{ :href => '#', :title => '', :alt => '' } 
-                    %img{ :alt => "Get it on Google Play", :src => "https://developer.android.com/images/brand/ru_generic_rgb_wo_45.png" }
-                  %a{ :href => '#', :title => '', :alt => '' } 
-                    %img{ :alt => "Download on the App Store", :src => "img/Download_on_the_App_Store_Badge_RU.svg" }
+      /         #download-links.animate-right2
+      /           .download-store.invisible
+      /             %span.download-store-text Доступно в 
+      /             %a{ :href => '#', :title => '', :alt => '' } 
+      /               %img{ :alt => "Get it on Google Play", :src => "https://developer.android.com/images/brand/ru_generic_rgb_wo_45.png" }
+      /             %a{ :href => '#', :title => '', :alt => '' } 
+      /               %img{ :alt => "Download on the App Store", :src => "img/Download_on_the_App_Store_Badge_RU.svg" }
 
 
 
@@ -103,9 +103,16 @@
               %p.main-desc2.animate-left2.invisible
                 Вам нужно всего лишь воспользоваться удобным интерфейсом заполнеения данных и другой маркетинговый текст приблизительно такой длины.
 
+              #wow-links.animate-left3
+                .download-store.invisible
+                  %span.download-store-text Доступно в 
+                  %a{ :href => '#', :title => '', :alt => '' } 
+                    %img{ :alt => "Get it on Google Play", :src => "https://developer.android.com/images/brand/ru_generic_rgb_wo_45.png" }
+                  %a{ :href => '#', :title => '', :alt => '' } 
+                    %img{ :alt => "Download on the App Store", :src => "img/Download_on_the_App_Store_Badge_RU.svg" }
 
       .section.buttons
-        .container
+        .container 
           .row
             .col-md-2.col-sm-4.col-xs-6.buttons-item.active
               %a{ :href => '#', :title => '' }
@@ -240,7 +247,7 @@
 
               %p.main-desc2
                 Без спама и рекламы. Мы не распространяем ваши почтовые ящики третьим лицам.
-
+ 
           .row
             .col-md-12
               %form.form-inline
@@ -256,13 +263,14 @@
               %h1 
                 %a{ :href => '#', :title => '' } Мобильная медсестра
 
-            .col-md-3.hidden-sm.hidden-xs.footer-text
-              %p
-                &copy; 2015 год
-                %br
-                Все права защищены.
+            .col-md-4.hidden-sm.hidden-xs.footer-text.navigation-menu
+              %ul.navigation-menu-ul
+                %li
+                  %a{ :href => '#', :title => '', 'data-reveal-id': 'form-pdf' } Презентация PDF
+                %li
+                  %a{ :href => '#', :title => '', 'data-reveal-id': 'form-mediakit' } Mediakit
 
-            .col-md-6.col-sm-6.footer-social
+            .col-md-5.col-sm-6.footer-social
               %ul.footer-social-ul
                 %li.footer-social-li
                   %a.footer-social-icon{ :href => '#', :title => ''}
@@ -288,7 +296,7 @@
         
         .form-group
           %label{ :for => "entry_553365034" } E-Mail
-          %input#entry_553365034.form-control{"aria-label" => " E-Mail  ", "aria-required" => "true", :dir => "auto", :name => "entry.553365034", :required => "", :title => "", :type => "text", :value => ""}
+          %input#entry_553365034.form-control{"aria-label" => " E-Mail  ", "aria-required" => "true", :dir => "auto", :name => "entry.553365034", :required => "required", :title => "", :type => "email", :value => ""}
 
         .form-group
           %label{ :for => "entry_82576170" } Сообщение
@@ -317,7 +325,7 @@
         
         .form-group
           %label{ :for => "entry_5713699" } E-Mail
-          %input#entry_5713699.form-control{"aria-label" => " E-Mail  ", "aria-required" => "true", :dir => "auto", :name => "entry.5713699", :required => "", :title => "", :type => "text", :value => ""}
+          %input#entry_5713699.form-control{"aria-label" => " E-Mail  ", "aria-required" => "true", :dir => "auto", :name => "entry.5713699", :required => "required", :title => "", :type => "email", :value => ""}
 
         .form-group
           %label{ :for => "entry_914677203" } Сообщение
